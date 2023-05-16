@@ -18,6 +18,7 @@ function updatePlayerName(event) {
       playerHeading.textContent = name;
     }
   }
+  
   //Göm knappen innan.
   restartButton.style.display = 'none';
 
