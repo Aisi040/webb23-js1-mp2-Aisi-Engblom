@@ -18,6 +18,8 @@ function updatePlayerName(event) {
       playerHeading.textContent = name;
     }
   }
+  //Göm knappen innan.
+  restartButton.style.display = 'none';
 
 // Funktionen gör så att datorn väljer
 function getComputerChoice() {
