@@ -8,7 +8,7 @@ const restartButton = document.querySelector('#restart');
 
 let playerScore = 0;
 let computerScore = 0;
-let finishedScore = 3;
+const finishedScore = 3;
 
 // gör namnet personligt
 function updatePlayerName(event) {
