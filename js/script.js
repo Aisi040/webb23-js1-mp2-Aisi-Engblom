@@ -8,6 +8,7 @@ const restartButton = document.querySelector('#restart');
 
 let playerScore = 0;
 let computerScore = 0;
+let finishedScore = 3;
 
 // gör namnet personligt
 function updatePlayerName(event) {
@@ -95,7 +96,7 @@ choices.forEach(choice => {
       displayResult('Du vann!');
       playerScore++;
       updateScore();
-      if (playerScore === 5) {
+      if (playerScore === finishedScore) {
         displayResult(`Grattis, du vann spelet!`);
         endGame();
       }
@@ -103,7 +104,7 @@ choices.forEach(choice => {
       displayResult('Datorn vann!');
       computerScore++;
       updateScore();
-      if (computerScore === 5) {
+      if (computerScore === finishedScore) {
         displayResult(`Datorn vann spelet! Försök igen.`);
         endGame();
       }
