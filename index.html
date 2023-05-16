@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sten, Sax, Påse</title>
+    <script src="js/script.js"defer></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+<body>
+    <div class="container">
+    <h1>Sten, Sax, Påse</h1>
+    <div class="input-container">
+      <label for="player-name">Ange ditt namn:</label>
+      <input type="text" id="player-name" oninput="updatePlayerName(this.value)">
+    </div>
+    <div class="game-container">
+      <div class="player">
+        <h2>Spelare</h2>
+        <p id="player-choice"></p>
+        <p>Poäng: <span id="player-score">0</span></p>
+      </div>
+      <div class="computer">
+        <h2>Datorn</h2>
+        <p id="computer-choice"></p>
+        <p>Poäng: <span id="computer-score">0</span></p>
+      </div>
+    </div>
+    <div class="choices">
+      <button class="choice" id="Sten">
+        <img src="rock.svg" alt="Sten">
+      </button>
+      <button class="choice" id="Påse">
+        <img src="paper.svg" alt="Påse">
+      </button>
+      <button class="choice" id="Sax">
+        <img src="scissors.svg" alt="Sax">
+      </button>
+    </div>
+    <p id="result"></p>
+    <button id="restart">Starta om</button>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
