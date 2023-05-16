@@ -19,7 +19,7 @@ function updatePlayerName(event) {
     }
   }
   
-  //Göm knappen innan.
+  //Göm knappen innan spelet börjar.
   restartButton.style.display = 'none';
 
 // Funktionen gör så att datorn väljer
