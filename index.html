@@ -12,6 +12,7 @@
     <div class="container">
     <h1>Sten, Sax, Påse</h1>
     <div class="input-container">
+          <!--Returnera spelarens namn. (overkill spelet börjar bara när namnet är inskrivet)-->
       <label for="player-name">Ange ditt namn:</label>
       <input type="text" id="player-name" oninput="updatePlayerName(this.value)">
     </div>
@@ -40,6 +41,7 @@
     </div>
     <p id="result"></p>
     <button id="restart">Starta om!</button>
+    <!--Starta om ska bara komma upp när spelet är slut-->
   </div>
   
   <script src="script.js"></script>
