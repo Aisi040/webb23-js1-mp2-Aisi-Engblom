@@ -10,15 +10,20 @@ let playerScore = 0;
 let computerScore = 0;
 const finishedScore = 3;
 
-// gör namnet personligt
-function updatePlayerName(event) {
-    if (event.key === 'Enter') {
-      var name = document.getElementById('player-name').value;
-      var playerHeading = document.getElementById('player-heading');
-      playerHeading.textContent = name;
-    }
+// Funktion för att uppdatera spelarens namn och visa det i spelarhuvudet
+function updatePlayerName(name) {
+  let playerHeading = document.getElementById('player-heading');
+  playerHeading.textContent = name;
+}
+
+// Händelsehanterare för att fånga Enter-tangenten och kalla på uppdatering av spelarens namn
+function handleKeyPress(event) {
+  if (event.key === 'Enter') {
+    let name = document.getElementById('player-name').value;
+    updatePlayerName(name);
   }
-  
+}
+
   //Göm knappen innan spelet börjar.
   restartButton.style.display = 'none';
 

@@ -5,7 +5,7 @@ body {
     padding: 20px;
   }
   
-  .container {
+  .game-container {
     max-width: 600px;
     margin: 0 auto;
     background-color: #fff;
@@ -39,6 +39,7 @@ body {
     display: flex;
     justify-content: space-around;
     margin-bottom: 20px;
+  
   }
   
   .player, .computer {
@@ -58,6 +59,10 @@ body {
   #result {
     font-weight: bold;
     margin-bottom: 20px;
+    display: flex;
+  justify-content: center;
+
+
   }
   
   #restart {
@@ -67,5 +72,8 @@ body {
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    display: flex;
+
+    
   }
   
